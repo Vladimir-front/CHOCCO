@@ -1,0 +1,22 @@
+$containerWidth: 940px;
+$baseFontSize: 18px;
+
+$blue: #61c4d9;
+$darkGreen: #0b4d3c;
+
+@import "https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css";
+@import "./lauout.scss";
+@import "./hero.scss";
+@import "./header.scss";
+@import "./features.scss";
+@import "./feature.scss";
+@import "./btn.scss";
+@import "./section.scss";
+@import "./headline.scss";
+@import "./benefits.scss";
+@import "./benefit.scss";
+@import "./benefits-section.scss";
+@import "./reviews.scss";
+@import "./interective-avatar.scss";
+@import "./form.scss";
+@import "./radio.scss";
