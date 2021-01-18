@@ -3,8 +3,8 @@ Error: Undefined variable: "$blue".
         on line 4 of C:\Users\Dell\Desktop\new project\css\components\hero.scss
 
 1: .hero {
-2:   background: url("./img-1/1/chocolate.png") right center / 50% auto no-repeat, 
-3:   url("./img-1/1/leaf-1.png") right bottom no-repeat;
+2:   background: url("../../img-1/1/chocolate.png") right center / 50% auto no-repeat, 
+3:   url("../../img-1/1/leaf-1.png") right bottom no-repeat;
 4:   background-color: $blue;
 5:   height: 100vh;
 6:   min-height: 650px;
@@ -60,4 +60,4 @@ C:/Program Files (x86)/Koala/bin/sass:22:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$blue\".\A         on line 4 of C:\Users\Dell\Desktop\new project\css\components\hero.scss\A \A 1: .hero {\A 2:   background: url(\"./img-1/1/chocolate.png\") right center / 50% auto no-repeat, \A 3:   url(\"./img-1/1/leaf-1.png\") right bottom no-repeat;\A 4:   background-color: $blue;\A 5:   height: 100vh;\A 6:   min-height: 650px;\A 7:   color: #fff;\A 8:   position: relative;\A 9: "; }
+  content: "Error: Undefined variable: \"$blue\".\A         on line 4 of C:\Users\Dell\Desktop\new project\css\components\hero.scss\A \A 1: .hero {\A 2:   background: url(\"../../img-1/1/chocolate.png\") right center / 50% auto no-repeat, \A 3:   url(\"../../img-1/1/leaf-1.png\") right bottom no-repeat;\A 4:   background-color: $blue;\A 5:   height: 100vh;\A 6:   min-height: 650px;\A 7:   color: #fff;\A 8:   position: relative;\A 9: "; }

@@ -60,7 +60,7 @@ img {
   max-width: 100%; }
 
 .hero {
-  background: url("./img-1/1/chocolate.png") right center/50% auto no-repeat, url("./img-1/1/leaf-1.png") right bottom no-repeat;
+  background: url("../../img-1/1/chocolate.png") right center/50% auto no-repeat, url("../../img-1/1/leaf-1.png") right bottom no-repeat;
   background-color: #61c4d9;
   height: 100vh;
   min-height: 650px;
@@ -70,10 +70,9 @@ img {
     position: absolute;
     bottom: -40px;
     left: 2%;
-    content: "";
-    background: url("/img-1/decor/leaf3.png"); }
+    content: url("../../img-1/decor/leaf3.png"); }
   .hero:after {
-    content: url("/img-1/decor/berry1.png");
+    content: url("../../img-1/decor/Group.png");
     position: absolute;
     bottom: -40px;
     right: 0; }
@@ -186,6 +185,11 @@ img {
     .section--font-color--green .section__title {
       color: inherit; }
 
+.order-section {
+  background: url("./../../img-1/decor/fon.png"); }
+  .order-section:before {
+    content: url("../../img-1/decor/leaf4.png") right bottom no-repeat; }
+
 .section__title {
   font-size: 48px;
   font-weight: bold;
@@ -209,9 +213,10 @@ img {
 
 .benefits__item {
   flex: 1;
-  padding: 0 3%; }
+  padding: 0 3%;
+  position: relative; }
   .benefits__item:before {
-    content: url("/img-1/decor/Combined.png");
+    content: url("../../img-1/decor/Combined.png");
     position: absolute;
     top: 30px;
     right: 0;
@@ -251,16 +256,30 @@ img {
 
 .benefits-section {
   position: relative;
-  background: url("/img-1/decor/leaf-pattern.png"); }
+  background: url("../../img-1/decor/leaf-pattern.png") left top 57% no-repeat; }
   .benefits-section:before {
-    content: url("/img-1/decor/raspberry1.png");
+    content: url("../../img-1/decor/raspberry1.png");
     position: absolute;
     bottom: -80px;
     left: 0; }
 
 .reviews__display {
-  background: #f8faf9;
-  padding: 50px 45px 34px; }
+  background: #f8faf9 url("../../img-1/decor/pattern.png") right top no-repeat;
+  margin-bottom: 20px;
+  padding: 50px 45px 34px;
+  overflow: hidden;
+  position: relative; }
+  .reviews__display:before {
+    content: "";
+    display: block;
+    width: 90px;
+    height: 90px;
+    background: #fff;
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -65px; }
 
 .reviews__display-inner {
   display: flex; }
@@ -272,12 +291,16 @@ img {
 
 .reviews__avatar {
   width: 254px;
-  height: 260px; }
+  height: 260px;
+  margin-right: 6px; }
 
 .reviews__avatar-img {
   object-fit: cover;
   width: 100%;
   height: 100%; }
+
+.reviews__switcher-item {
+  margin-right: 6px; }
 
 .reviews__content {
   flex: 1;
@@ -296,6 +319,9 @@ img {
   font-size: 18px;
   font-weight: bold;
   color: black; }
+
+.reviews-section {
+  background: url("../../img-1/decor/berry4.png") right top no-repeat, url("../../img-1/decor/berrys.png") left bottom no-repeat; }
 
 .interective-avatar {
   width: 80px;
@@ -353,16 +379,18 @@ img {
 
 .form__controls {
   display: flex;
-  flex-wrap: wrap; }
+  flex-wrap: wrap;
+  margin-bottom: 19px; }
 
 .radio {
   display: flex;
   cursor: pointer;
-  user-select: none; }
-  .radio--chekbox .radio__visible {
+  user-select: none;
+  margin-right: 29px; }
+  .radio--checkbox .radio__visible {
     border-radius: 0; }
-    .radio--chekbox .radio__visible:before {
-      background: url("/img-1/decor/tick.png") center center no-repeat; }
+    .radio--checkbox .radio__visible:before {
+      background: url("./../../img-1/decor/tick.png") center center no-repeat; }
 
 .radio__elem {
   display: none; }
@@ -374,7 +402,8 @@ img {
   height: 26px;
   position: relative;
   border-radius: 50%;
-  background: #fff; }
+  background: #fff;
+  margin-right: 10px; }
   .radio__visible:before {
     content: "";
     width: 14px;
@@ -385,6 +414,41 @@ img {
     display: none;
     top: 50%;
     left: 50%;
-    transform: translate(-50% -50%); }
+    transform: translate(-50%, -50%); }
+
+.fixed-menu {
+  position: fixed;
+  top: 20%;
+  right: 3%;
+  z-index: 100; }
+
+.fixed-menu__item {
+  margin-bottom: 5px; }
+  .fixed-menu__item--active .fixed-menu__link {
+    border-color: #fff; }
+
+.fixed-menu__link {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  border: 1px solid transparent;
+  display: block;
+  position: relative; }
+  .fixed-menu__link:before {
+    content: "";
+    display: block;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+
+.map-section {
+  background: url("../../img-1/map.png") center center no-repeat;
+  width: 100%;
+  height: 100%; }
 
 /*# sourceMappingURL=main.css.map */
