@@ -1,52 +1,32 @@
 /*
-Error: Undefined variable: "$blue".
-        on line 4 of C:\Users\Dell\Desktop\new project\css\components\hero.scss
+Error: Invalid CSS after "...m()arem()trem()": expected "{", was ";rem()"
+        on line 3 of C:\Users\Dell\Desktop\new project\css\components\hero.scss
 
-1: .hero {
-2:   background: url("../../img-1/1/chocolate.png") right center / 50% auto no-repeat, 
-3:   url("../../img-1/1/leaf-1.png") right bottom no-repeat;
-4:   background-color: $blue;
-5:   height: 100vh;
-6:   min-height: 650px;
-7:   color: #fff;
-8:   position: relative;
-9: 
+1: rem().rem()hrem()erem()rrem()orem() rem(){rem()
+2: rem() rem() rem()brem()arem()crem()krem()grem()rrem()orem()urem()nrem()drem():rem() rem()urem()rrem()lrem()(rem()"rem().rem().rem()/rem().rem().rem()/rem()irem()mrem()grem()-rem()1rem()/rem()1rem()/rem()crem()hrem()orem()crem()orem()lrem()arem()trem()erem().rem()prem()nrem()grem()"rem())rem() rem()rrem()irem()grem()hrem()trem() rem()crem()erem()nrem()trem()erem()rrem() rem()/rem() rem()5rem()0rem()%rem() rem()arem()urem()trem()orem() rem()nrem()orem()-rem()rrem()erem()prem()erem()arem()trem(),rem() rem()
+3: rem() rem() rem()urem()rrem()lrem()(rem()"rem().rem().rem()/rem().rem().rem()/rem()irem()mrem()grem()-rem()1rem()/rem()1rem()/rem()lrem()erem()arem()frem()-rem()1rem().rem()prem()nrem()grem()"rem())rem() rem()rrem()irem()grem()hrem()trem() rem()brem()orem()trem()trem()orem()mrem() rem()nrem()orem()-rem()rrem()erem()prem()erem()arem()trem();rem()
+4: rem() rem() rem()brem()arem()crem()krem()grem()rrem()orem()urem()nrem()drem()-rem()crem()orem()lrem()orem()rrem():rem() rem()$rem()brem()lrem()urem()erem();rem()
+5: rem() rem() rem()hrem()erem()irem()grem()hrem()trem():rem() rem()1rem()0rem()0rem()vrem()hrem();rem()
+6: rem() rem() rem()mrem()irem()nrem()-rem()hrem()erem()irem()grem()hrem()trem():rem() rem()6rem()5rem()0rem()prem()xrem();rem()
+7: rem() rem() rem()crem()orem()lrem()orem()rrem():rem() rem()#rem()frem()frem()frem();rem()
+8: rem() rem() rem()prem()orem()srem()irem()trem()irem()orem()nrem():rem() rem()rrem()erem()lrem()arem()trem()irem()vrem()erem();rem()
 
 Backtrace:
-C:\Users\Dell\Desktop\new project\css\components\hero.scss:4
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/script/tree/variable.rb:49:in `_perform'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/script/tree/node.rb:50:in `perform'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:402:in `visit_prop'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `visit'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `block in with_base'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:135:in `with_frame'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `with_base'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `visit'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:444:in `block (2 levels) in visit_rule'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:444:in `map'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:444:in `block in visit_rule'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:442:in `visit_rule'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `visit'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `block in with_base'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:135:in `with_frame'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `with_base'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `visit'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:52:in `map'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:52:in `visit_children'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:171:in `block in visit_children'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:170:in `visit_children'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `block in visit'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:190:in `visit_root'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `visit'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:161:in `visit'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:10:in `visit'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/root_node.rb:36:in `css_tree'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
+C:\Users\Dell\Desktop\new project\css\components\hero.scss:3
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:1278:in `expected'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:1208:in `expected'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:1203:in `tok!'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:677:in `block'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:747:in `declaration_or_ruleset'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:697:in `block_child'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:686:in `block_contents'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:678:in `block'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:670:in `ruleset'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:696:in `block_child'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:686:in `block_contents'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:137:in `stylesheet'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:41:in `parse'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:414:in `_to_tree'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:389:in `_render_with_sourcemap'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:307:in `render_with_sourcemap'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/exec/sass_scss.rb:391:in `run'
@@ -60,4 +40,4 @@ C:/Program Files (x86)/Koala/bin/sass:22:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$blue\".\A         on line 4 of C:\Users\Dell\Desktop\new project\css\components\hero.scss\A \A 1: .hero {\A 2:   background: url(\"../../img-1/1/chocolate.png\") right center / 50% auto no-repeat, \A 3:   url(\"../../img-1/1/leaf-1.png\") right bottom no-repeat;\A 4:   background-color: $blue;\A 5:   height: 100vh;\A 6:   min-height: 650px;\A 7:   color: #fff;\A 8:   position: relative;\A 9: "; }
+  content: "Error: Invalid CSS after \"...m()arem()trem()\": expected \"{\", was \";rem()\"\A         on line 3 of C:\Users\Dell\Desktop\new project\css\components\hero.scss\A \A 1: rem().rem()hrem()erem()rrem()orem() rem(){rem()\A 2: rem() rem() rem()brem()arem()crem()krem()grem()rrem()orem()urem()nrem()drem():rem() rem()urem()rrem()lrem()(rem()\"rem().rem().rem()/rem().rem().rem()/rem()irem()mrem()grem()-rem()1rem()/rem()1rem()/rem()crem()hrem()orem()crem()orem()lrem()arem()trem()erem().rem()prem()nrem()grem()\"rem())rem() rem()rrem()irem()grem()hrem()trem() rem()crem()erem()nrem()trem()erem()rrem() rem()/rem() rem()5rem()0rem()%rem() rem()arem()urem()trem()orem() rem()nrem()orem()-rem()rrem()erem()prem()erem()arem()trem(),rem() rem()\A 3: rem() rem() rem()urem()rrem()lrem()(rem()\"rem().rem().rem()/rem().rem().rem()/rem()irem()mrem()grem()-rem()1rem()/rem()1rem()/rem()lrem()erem()arem()frem()-rem()1rem().rem()prem()nrem()grem()\"rem())rem() rem()rrem()irem()grem()hrem()trem() rem()brem()orem()trem()trem()orem()mrem() rem()nrem()orem()-rem()rrem()erem()prem()erem()arem()trem();rem()\A 4: rem() rem() rem()brem()arem()crem()krem()grem()rrem()orem()urem()nrem()drem()-rem()crem()orem()lrem()orem()rrem():rem() rem()$rem()brem()lrem()urem()erem();rem()\A 5: rem() rem() rem()hrem()erem()irem()grem()hrem()trem():rem() rem()1rem()0rem()0rem()vrem()hrem();rem()\A 6: rem() rem() rem()mrem()irem()nrem()-rem()hrem()erem()irem()grem()hrem()trem():rem() rem()6rem()5rem()0rem()prem()xrem();rem()\A 7: rem() rem() rem()crem()orem()lrem()orem()rrem():rem() rem()#rem()frem()frem()frem();rem()\A 8: rem() rem() rem()prem()orem()srem()irem()trem()irem()orem()nrem():rem() rem()rrem()erem()lrem()arem()trem()irem()vrem()erem();rem()"; }

@@ -1,6 +1,11 @@
 $containerWidth: 940px;
 $baseFontSize: 18px;
 
+$tablets: 768px;
+$phone: 480px;
+
+@import "./media.scss";
+
 $z-index-menu: 100;
 
 $blue: #61c4d9;
@@ -26,3 +31,4 @@ $darkGreen: #0b4d3c;
 @import "./order-section.scss";
 @import "./fixed-menu.scss";
 @import "./map-section.scss";
+@import "./hamburger.scss";
