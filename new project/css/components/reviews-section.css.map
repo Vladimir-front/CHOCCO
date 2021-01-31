@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,gBAAiB;EACf,UAAU,EAAE,kHAC6C",
+"sources": ["reviews-section.scss"],
+"names": [],
+"file": "reviews-section.css"
+}

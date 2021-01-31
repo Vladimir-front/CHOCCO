@@ -2,10 +2,18 @@
   position: relative;
   background: url("../../img-1/decor/leaf-pattern.png") left top 57% no-repeat;
 
+  @include phones {
+    background: none;
+  }
+
   &:before {
     content: url("../../img-1/decor/raspberry1.png");
     position: absolute;
     bottom: rem(-80px);
     left: 0;
+
+    @include phones {
+      display: none;
+    }
   }
 }

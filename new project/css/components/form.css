@@ -1,22 +1,26 @@
 /*
-Error: Undefined variable: "$blue".
-        on line 4 of C:\Users\Dell\Desktop\new project\css\components\hero.scss
+Error: Undefined mixin 'tablets'.
+        on line 4 of C:\Users\Dell\Desktop\new project\css\components\form.scss, in `tablets'
+        from line 4 of C:\Users\Dell\Desktop\new project\css\components\form.scss
 
-1: .hero {
-2:   background: url("../../img-1/1/chocolate.png") right center / 50% auto no-repeat, 
-3:   url("../../img-1/1/leaf-1.png") right bottom no-repeat;
-4:   background-color: $blue;
-5:   height: 100vh;
-6:   min-height: rem(650px);
-7:   color: #fff;
-8:   position: relative;
-9: 
+1: .form {
+2:   display: flex;
+3: 
+4:   @include tablets {
+5:     padding: 0 19%;
+6:     flex-direction: column;
+7:   }
+8: 
+9:   @include phones {
 
 Backtrace:
-C:\Users\Dell\Desktop\new project\css\components\hero.scss:4
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/script/tree/variable.rb:49:in `_perform'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/script/tree/node.rb:50:in `perform'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:402:in `visit_prop'
+C:\Users\Dell\Desktop\new project\css\components\form.scss:4:in `tablets'
+C:\Users\Dell\Desktop\new project\css\components\form.scss:4
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:352:in `block in visit_mixin'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:98:in `block in with_mixin'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:135:in `with_frame'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:98:in `with_mixin'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:350:in `visit_mixin'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `visit'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `block in with_base'
@@ -60,4 +64,4 @@ C:/Program Files (x86)/Koala/bin/sass:22:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$blue\".\A         on line 4 of C:\Users\Dell\Desktop\new project\css\components\hero.scss\A \A 1: .hero {\A 2:   background: url(\"../../img-1/1/chocolate.png\") right center / 50% auto no-repeat, \A 3:   url(\"../../img-1/1/leaf-1.png\") right bottom no-repeat;\A 4:   background-color: $blue;\A 5:   height: 100vh;\A 6:   min-height: rem(650px);\A 7:   color: #fff;\A 8:   position: relative;\A 9: "; }
+  content: "Error: Undefined mixin 'tablets'.\A         on line 4 of C:\Users\Dell\Desktop\new project\css\components\form.scss, in `tablets'\A         from line 4 of C:\Users\Dell\Desktop\new project\css\components\form.scss\A \A 1: .form {\A 2:   display: flex;\A 3: \A 4:   @include tablets {\A 5:     padding: 0 19%;\A 6:     flex-direction: column;\A 7:   }\A 8: \A 9:   @include phones {"; }

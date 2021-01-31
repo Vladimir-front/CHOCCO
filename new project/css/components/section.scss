@@ -15,11 +15,9 @@
 }
 
 .order-section {
-  background: url("./../../img-1/decor/fon.png");
-
-  &:before {
-    content: url("../../img-1/decor/leaf4.png") right bottom no-repeat;
-  }
+  background: url("./../../img-1/decor/fon.png") center center/cover no-repeat,
+  url("../../img-1/decor/berry3.png") bottom 14% left 2% no-repeat,
+  url("../../img-1/decor/leaf4.png") right 1% bottom 16% no-repeat;
 }
 
 .section__title {

@@ -5,8 +5,8 @@
 }
 
 .menu {
-  margin: 0 30px;
-  padding-top: 5px;
+  margin: 0 rem(30px);
+  padding-top: rem(5px);
   
   @include tablets {
     display: none;
@@ -22,7 +22,7 @@
 
 .menu__item {
   margin-right: rem(27px);
-  margin-bottom: 10px;
+  margin-bottom: rem(10px);
 
   &:last-child {
     margin-right: 0;

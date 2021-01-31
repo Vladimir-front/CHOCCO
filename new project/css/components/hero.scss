@@ -57,13 +57,17 @@
     text-align: center;
 
     &:before {
-      content: url("../../img-1/adaptive-tablets/comp.png");
+      content: "";
+      margin-bottom: rem(16px);
+      background: url("../../img-1/adaptive-tablets/comp.png") center center / contain no-repeat;
+      width: rem(316px);
+      height: rem(330px);
     }
   }
 }
 
 .hero__title-section {
-  @include tablets {
+ @include tablets {
     display: none;
   }
 }
@@ -83,5 +87,9 @@
 
   @include tablets {
     padding: 0 24%;
+  }
+
+  @include phones {
+    padding: 0 16%;
   }
 }

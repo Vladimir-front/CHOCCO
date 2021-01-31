@@ -21,6 +21,12 @@
 
 .reviews__display-inner {
   display: flex;
+
+  @include tablets {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
 }
 
 .reviews__switcher {
@@ -33,6 +39,11 @@
   width: rem(254px);
   height: rem(260px);
   margin-right: rem(6px);
+
+  @include tablets {
+    width: rem(130px);
+  height: rem(132px);
+  }
 }
 
 .reviews__avatar-img {

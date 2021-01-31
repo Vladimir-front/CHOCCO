@@ -2,9 +2,8 @@ $containerWidth: 940px;
 $baseFontSize: 18px;
 
 $tablets: 768px;
-$phone: 480px;
+$phones: 480px;
 
-@import "./media.scss";
 
 $z-index-menu: 100;
 
@@ -12,6 +11,7 @@ $blue: #61c4d9;
 $darkGreen: #0b4d3c;
 
 @import "https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css";
+@import "./media.scss";
 @import "./lauout.scss";
 @import "./hero.scss";
 @import "./header.scss";
@@ -32,3 +32,11 @@ $darkGreen: #0b4d3c;
 @import "./fixed-menu.scss";
 @import "./map-section.scss";
 @import "./hamburger.scss";
+@import "./slider.scss";
+@import "./product-menu-section.scss";
+@import "./product-menu.scss";
+@import "./product-section.scss";
+@import "./product.scss";
+@import "./ingredients.scss";
+@import "./footer.scss";
+@import "./socials.scss";

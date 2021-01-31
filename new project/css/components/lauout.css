@@ -1,32 +1,50 @@
 /*
-Error: Invalid CSS after "...m()0rem()%rem()": expected "{", was ";rem()"
-        on line 3 of C:\Users\Dell\Desktop\new project\css\components\lauout.scss
+Error: Undefined variable: "$baseFontSize".
+        on line 2 of C:\Users\Dell\Desktop\new project\css\components\lauout.scss
 
-1: rem()hrem()trem()mrem()lrem(),rem()
-2: rem()brem()orem()drem()yrem() rem(){rem()
-3: rem() rem() rem()hrem()erem()irem()grem()hrem()trem():rem() rem()1rem()0rem()0rem()%rem();rem()
-4: rem()}rem()
-5: rem()
-6: rem()brem()orem()drem()yrem() rem(){rem()
-7: rem() rem() rem()frem()orem()nrem()trem()-rem()srem()irem()zrem()erem():rem() rem()$rem()brem()arem()srem()erem()Frem()orem()nrem()trem()Srem()irem()zrem()erem();rem()
-8: rem() rem() rem()frem()orem()nrem()trem()-rem()frem()arem()mrem()irem()lrem()yrem():rem() rem()"rem()Arem()lrem()erem()grem()rrem()erem()yrem()arem() rem()Srem()arem()nrem()srem()"rem(),rem()Arem()rrem()irem()arem()lrem(),rem() rem()Hrem()erem()lrem()vrem()erem()trem()irem()crem()arem(),rem() rem()srem()arem()nrem()srem()-rem()srem()erem()rrem()irem()frem();rem()
+1: html {
+2:   font-size: $baseFontSize;
+3: 
+4:   @include tablets {
+5:     font-size: calc($baseFontSize - 1px);
+6:   }
+7: 
 
 Backtrace:
-C:\Users\Dell\Desktop\new project\css\components\lauout.scss:3
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:1278:in `expected'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:1208:in `expected'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:1203:in `tok!'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:677:in `block'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:747:in `declaration_or_ruleset'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:697:in `block_child'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:686:in `block_contents'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:678:in `block'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:670:in `ruleset'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:696:in `block_child'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:686:in `block_contents'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:137:in `stylesheet'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:41:in `parse'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:414:in `_to_tree'
+C:\Users\Dell\Desktop\new project\css\components\lauout.scss:2
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/script/tree/variable.rb:49:in `_perform'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/script/tree/node.rb:50:in `perform'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:402:in `visit_prop'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `block in with_base'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:135:in `with_frame'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `with_base'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:444:in `block (2 levels) in visit_rule'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:444:in `map'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:444:in `block in visit_rule'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:442:in `visit_rule'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `block in with_base'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:135:in `with_frame'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `with_base'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:52:in `map'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:171:in `block in visit_children'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:170:in `visit_children'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:190:in `visit_root'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:161:in `visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:10:in `visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/root_node.rb:36:in `css_tree'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:389:in `_render_with_sourcemap'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:307:in `render_with_sourcemap'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/exec/sass_scss.rb:391:in `run'
@@ -40,4 +58,4 @@ C:/Program Files (x86)/Koala/bin/sass:22:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Invalid CSS after \"...m()0rem()%rem()\": expected \"{\", was \";rem()\"\A         on line 3 of C:\Users\Dell\Desktop\new project\css\components\lauout.scss\A \A 1: rem()hrem()trem()mrem()lrem(),rem()\A 2: rem()brem()orem()drem()yrem() rem(){rem()\A 3: rem() rem() rem()hrem()erem()irem()grem()hrem()trem():rem() rem()1rem()0rem()0rem()%rem();rem()\A 4: rem()}rem()\A 5: rem()\A 6: rem()brem()orem()drem()yrem() rem(){rem()\A 7: rem() rem() rem()frem()orem()nrem()trem()-rem()srem()irem()zrem()erem():rem() rem()$rem()brem()arem()srem()erem()Frem()orem()nrem()trem()Srem()irem()zrem()erem();rem()\A 8: rem() rem() rem()frem()orem()nrem()trem()-rem()frem()arem()mrem()irem()lrem()yrem():rem() rem()\"rem()Arem()lrem()erem()grem()rrem()erem()yrem()arem() rem()Srem()arem()nrem()srem()\"rem(),rem()Arem()rrem()irem()arem()lrem(),rem() rem()Hrem()erem()lrem()vrem()erem()trem()irem()crem()arem(),rem() rem()srem()arem()nrem()srem()-rem()srem()erem()rrem()irem()frem();rem()"; }
+  content: "Error: Undefined variable: \"$baseFontSize\".\A         on line 2 of C:\Users\Dell\Desktop\new project\css\components\lauout.scss\A \A 1: html {\A 2:   font-size: $baseFontSize;\A 3: \A 4:   @include tablets {\A 5:     font-size: calc($baseFontSize - 1px);\A 6:   }\A 7: "; }
