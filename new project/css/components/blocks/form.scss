@@ -1,0 +1,195 @@
+.section-form {
+    background-image: url(../img/form/bg_form.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+        @include tablets {
+            padding: 0 17%;
+        }
+        @include phones {
+            padding: 5% 0;
+        }
+    &__container {
+        flex-direction: column;
+        position: relative;
+    }
+    &__blueberry {
+        position: absolute;
+        left: -5%;
+        top: 91%;
+        @include tablets {
+            display: none;
+        }
+    }
+    &__leaf {
+        position: absolute;
+        right: -7%;
+        top: 63%;
+        @include tablets {
+            display: none;
+        }
+    }
+}
+
+.title {
+    &-form {
+        color: $green;
+        margin-bottom: 5%;
+        @include phones {
+            font-size: rem(34px);
+            line-height: rem(36px);
+
+        }
+    }
+}
+
+.form {
+    display: flex;
+    width: 100%;
+    @include tablets {
+        flex-direction: column;
+    }
+    &__col {
+        flex: 1;
+        padding: 0 1.5%;
+        &--btn {
+            display: flex;
+        }
+    }
+    &__row {
+        display: flex;
+        margin: 0 -2%;
+        margin-bottom: 3%;
+        &--btn {
+            margin-top: 15%;
+            @include tablets { 
+                margin: 10% 15%;
+            }
+            @include phones { 
+                margin: 5%;
+            }
+        }
+    }
+}
+
+.label {
+    &__text {
+        display: block;
+        margin-bottom: 1%;  
+        color: $green;
+        font-size: rem(18px);
+        font-weight: 500;
+    }
+    &__input {
+        display: block;
+        width: 100%;
+        background-color: $white;
+        padding: rem(16px);
+        font-size: rem(16px);
+        border: none;
+        &:focus{
+            outline: 3px solid $lightgreen;
+        }
+        @include phones {
+            padding: rem(10px);
+        }
+    }
+    &__textarea {
+        width: 100%;
+        height: rem(160px);
+        padding: 2%;
+        font-size: rem(14px);
+        resize: none;
+        border: none;
+        &:focus{
+            outline: 3px solid $lightgreen;
+        }
+        @include phones {
+            height: rem(100px);
+        }
+    }
+}
+
+.radio {
+    &-group {
+        display: flex;
+        @include tablets {
+            justify-content: center;
+        }
+    }
+    &__input {
+        position: absolute;
+        opacity: 0;
+        &:checked + .radio__content .radio__btn::after {
+            opacity: 1;
+        }
+    }
+    &__content {
+        display: flex;
+        align-items: center;
+        margin-right: rem(16px);
+    }
+    &__btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: rem(24px);
+        height: rem(24px);
+        border-radius: 50%;
+        background-color: $white;
+        margin-right: 10px;
+        &::after {
+            content: "";
+            display: block;
+            width: rem(12px);
+            height: rem(12px);
+            background-color: $green;
+            border-radius: 50%;
+            transition: .3s;
+            opacity: 0;
+        }
+    }
+    &__text {
+        color: $green;
+    }
+}    
+
+.checkbox {
+    &__content {
+        display: flex;
+        align-items: center;
+        @include tablets {
+            justify-content: center;
+        }
+    }
+    &__btn {
+        position: relative;
+        width: rem(24px);
+        height: rem(24px);
+        background-color: $white;
+        margin-right: 2%;
+        img {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: rem(11px);
+            height: rem(9px);
+            opacity: 0;
+        }
+    }
+    &__input {
+        opacity: 0;
+        position: absolute;
+        &:checked + .checkbox__content .checkbox__btn img {
+            opacity: 1;
+        }
+    }
+    &__text {
+        color: $green;
+    }
+}
+
+
+
+

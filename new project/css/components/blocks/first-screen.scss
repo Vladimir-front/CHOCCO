@@ -1,0 +1,166 @@
+.section-firstscreen {
+    background-color: $blue;
+    background-image: url(../img/firstscreen/fern.png);
+    background-repeat: no-repeat;
+    background-position: center right;
+    background-size: contain;
+    &__container {  
+        flex-direction: row;
+        position: relative;
+        @include ipadpro {
+            flex-direction: column;
+        }
+    }
+    &__column-left {
+        position: relative;
+        @include ipadpro {
+            order: 2;
+            padding-top: 8%;
+        }
+    }
+    &__column-right {
+        position: relative;
+        @include ipadpro {
+            order: 1;
+            text-align: center;
+        }
+    }
+    &__heading {
+        margin-bottom: 2%;
+        color: $white;
+        font-size: rem(60px);
+        font-weight: 700;
+        line-height: rem(60px);
+        text-transform: uppercase;
+        @include ipadpro {
+            text-align: center;
+            margin-bottom: 0;  
+        }
+        @include phones {
+            font-size: rem(45px);
+            line-height: rem(42px);
+        }
+    }
+    &__slogan {
+        margin-right: 20%;
+        margin-bottom: 6%; 
+        color: $white;
+        font-size: rem(20px);
+        font-weight: 400;
+        @include ipadpro {
+            padding: 0 25%;
+            margin: 0 auto;
+            margin-bottom: 7%;
+            text-align: center;
+        }
+        @include phones {
+            line-height: rem(24px);
+            padding: 0 5%;
+            margin-bottom: 3%;
+        }
+    }
+    &__list {
+        margin-top: 15%;
+        display: flex;
+        justify-content: space-between;
+        text-align: center;
+        @include ipadpro {
+            margin-top: 5%;
+            padding: 0 7% 3%;
+        }
+        @include phones {
+            margin-top: 3%;
+            padding: 0;
+        }
+    }
+    &__item {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    &__logo {
+        margin-right: 8%;
+        width: rem(70px);
+        height: rem(70px);
+        fill: none;
+        stroke: $logo_blue;
+        stroke-width: 0.7;
+        stroke-miterlimit: 10;
+        @include phones {
+            width: rem(50px);
+            height: rem(50px);
+        }
+    }
+    &__text {
+        margin-right: 7%;
+        text-align: left;
+        font-size: rem(16px);
+        font-weight: 400;
+        line-height: rem(18px);
+        @include phones {
+            margin-right: 0;
+            font-size: rem(14px);
+        }
+    }
+    &__blackberry {
+        position: absolute;
+        top: 107%;
+        right: 12%;  
+        @include ipadpro {
+            top: 80%;
+            width: 57%;
+            left: 35%;
+        }
+    }
+    &__greenleaf {
+        display: none;
+        @include ipadpro {
+            display: block;
+            position: absolute;
+            width: 10%;
+            bottom: 12%;
+            left: 7%;
+        }
+    }
+    &__greenleaf-left {
+        position: absolute;
+        bottom: -60%;
+        left: -15%;
+        @include ipadpro {
+            display: none;
+        }
+    }
+    &__berries {
+        position: absolute;
+        left: 52%;
+        bottom: 24%;
+        @include ipadpro {
+            width: 55%;
+            left: 44%;
+            bottom:6%;
+        }
+    }
+    &__blueberry {
+        position: absolute;
+        left: 20%;
+        bottom: 15%;
+        @include ipadpro {
+            bottom: 50%;
+            left: 12%;
+        }
+    }
+    &__candybar {
+        margin-bottom: 25%;
+        margin-left: 10%;
+        @include tablets {
+            width: 80%;
+            margin-bottom: 0;
+            margin-left: 0;
+        }
+        @include phones {
+            width: 60%;
+        }
+    }
+}
+
+

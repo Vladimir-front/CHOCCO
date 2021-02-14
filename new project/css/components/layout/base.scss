@@ -1,0 +1,91 @@
+html {
+    @include tablets {
+      font-size: rem(14px);
+    }
+    @include phones {
+      font-size: rem(12px);
+    }
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html, body { 
+    height: 100%;
+    font-size: rem(16px);      
+}
+
+body {
+    position: relative; 
+    font-family: 'Alegreya Sans', sans-serif;
+    line-height: 1.42; 
+    color: $white;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+    li {
+      list-style: none;
+    }
+}
+
+h1,h2,h3,h4,h5,h6 {
+    margin: 0;
+    font-weight: normal;
+}
+
+p {
+    padding: 0;
+    margin: 0;
+}
+  
+footer {
+    position: relative;
+    width: 100%;
+}
+
+ .section {    
+    width: 100vw;
+    height: 100%;
+    min-height: rem(650px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+ }
+
+ .container {
+    position: relative;
+    margin: 0 auto;
+    max-width: rem(960px);
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+ 
+.title {  
+    color: $darkgrey;
+    font-size: rem(48px);
+    font-weight: 700;
+    text-transform: uppercase;
+    z-index: 10;
+    @include phones {
+        font-size: rem(36px);
+        text-align: center;
+    }
+} 
+ 
+.wrapper {
+    position: relative;
+    width: 100%;
+    min-height: 100%;
+    overflow: hidden;
+}

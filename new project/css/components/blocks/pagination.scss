@@ -1,0 +1,55 @@
+.pagination {
+	@include tablets {
+		display: none;
+    }
+    &__item.active {
+        .pagination {
+            &__link {
+                &:before {
+                    width: rem(16px);
+                    height: rem(16px);
+                }
+            }
+        }
+    }
+    &__list {
+        position:fixed;
+        top: 40%;
+        right: 5%;
+        z-index: 20;
+        @include phones {
+            right: 2%;
+        }
+    }
+    &__link  {
+		position: relative;
+		display: block;
+		width: 100%;
+        height: 21px;
+        
+		&:after,
+		&:before {
+			content: '';
+			position: absolute;
+			display: block;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			border-radius: 50%;
+		}
+		&:after {
+			width: 6px;
+			height: 6px;
+			background-color: #fff; 
+			box-shadow: 0 0 5px rgba(0,0,0,0.5);
+		}
+		&:before {
+			width: 0;
+			height: 0;
+			background-color: transparent; 
+			border: 1px solid #fff;
+			transition: 0.3s;
+			box-shadow: 0 0 10px rgba(0,0,0,0.5);
+		}
+    }
+}

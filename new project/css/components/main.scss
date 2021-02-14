@@ -1,42 +1,28 @@
-$containerWidth: 940px;
-$baseFontSize: 18px;
-
-$tablets: 768px;
-$phones: 480px;
-
-
-$z-index-menu: 100;
-
+//colors
+$white: #fff;
+$black:  #000;
+$darkgrey: #0d0d0d;
+$grey: #666;
+$lightgrey: #323232;
+$network_grey: #b3b3b3;
+$why_grey: #f2f5f4;
+$green: #0f5a47;
+$lightgreen: #dde3bd;
 $blue: #61c4d9;
+$darkblue: #00accf;
+$logo_blue: #b0f7ff;
+$lightblue:#f8faf9;
 $darkGreen: #0b4d3c;
 
-@import "https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css";
-@import "./media.scss";
-@import "./lauout.scss";
-@import "./hero.scss";
-@import "./header.scss";
-@import "./features.scss";
-@import "./feature.scss";
-@import "./btn.scss";
-@import "./section.scss";
-@import "./headline.scss";
-@import "./benefits.scss";
-@import "./benefit.scss";
-@import "./benefits-section.scss";
-@import "./reviews.scss";
-@import "./reviews-section.scss";
-@import "./interective-avatar.scss";
-@import "./form.scss";
-@import "./radio.scss";
-@import "./order-section.scss";
-@import "./fixed-menu.scss";
-@import "./map-section.scss";
-@import "./hamburger.scss";
-@import "./slider.scss";
-@import "./product-menu-section.scss";
-@import "./product-menu.scss";
-@import "./product-section.scss";
-@import "./product.scss";
-@import "./ingredients.scss";
-@import "./footer.scss";
-@import "./socials.scss";
+$z-fixed-menu: 100;
+
+// resolutions
+$phones: 480px;
+$tablets: 768px;
+$ipadpro: 1024px;
+
+//layout
+@import "./layout/*.scss";
+
+// blocks
+@import "./blocks/*.scss";

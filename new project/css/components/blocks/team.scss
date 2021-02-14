@@ -1,0 +1,136 @@
+.section-team {
+    position: relative;
+    &__blueberry {
+        position: absolute;
+        right: 0;
+        top: -27%;
+        @include tablets {
+            width: 20%;
+        }
+        @include phones {
+            top: -15%;
+        }
+    }
+    &__berry {
+        position: absolute;
+        bottom: -5%;
+        left: 10%;
+        z-index: 1;
+        @include tablets {
+            width: 10%;
+            left: 6%;
+            bottom: -4%;
+        }
+    }  
+    &__wrapper {
+        margin-top: 5%;
+    }  
+}
+
+.team {
+        width: rem(940px);
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        @include tablets {
+            flex-wrap: wrap;
+            padding: 0 25%;
+        }
+        @include phones {
+            padding: 0 35%;
+        }
+    &__item {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        @include tablets {
+            width: 45%;
+        }
+    }
+    &__photo { 
+        margin-bottom: 7%;
+        overflow: hidden; 
+        width: rem(220px);
+        height: rem(290px);
+        position: relative;
+        padding: 4%;
+        @include phones {
+            width: rem(130px);
+            height: rem(171px);
+        }
+        &:before {
+            content: "";
+            position: absolute;
+            top: 2%;
+            left: 3%;
+            right: 3%;
+            bottom: 4.2%;
+            background-color: $blue;
+            transform: skew(2deg, 2deg);
+            z-index: -1;
+        }
+    }
+    &__img {
+        max-width: 100%;
+        object-fit: cover;
+        object-position: center;
+        transition: .5s;
+    }
+    &__post {
+        position: absolute;
+        height: 0;
+        overflow: hidden; 
+        @include phones {
+            line-height: rem(23px);
+        }
+    }
+    &__name {
+        color: $lightgrey;
+        font-size: rem(21px);
+        font-weight: 500;
+        position: relative;
+        cursor: pointer;
+        @include phones {
+            line-height: rem(23px);
+        }
+        &--active {
+            .team__svg--down {
+                display: inline;
+            }
+            .team__svg {
+                display: none;
+            }
+            .team__post {
+                overflow: visible;
+                @include tablets {
+                    margin: 0 auto;
+                    position: static;
+                    height: auto;
+                }
+            }
+        }
+    }
+    &__position {
+        text-align: center;
+    }   
+    &__responsibilities {
+        text-align: center;
+    }
+    &__position {
+        color: $lightgrey;
+        font-size: rem(21px);
+        font-weight: 400;
+    } 
+    &__responsibilities {
+        color: $grey;
+        font-size: rem(21px);
+        font-weight: 300;
+    }
+    &__svg {
+        &--down {
+            display: none;
+        }
+    }
+}

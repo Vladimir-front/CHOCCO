@@ -1,0 +1,226 @@
+.section-slider {
+    background-color: $lightblue;
+    &__container {
+        align-items: stretch;
+        height: 100vh;
+    } 
+}
+
+.slider {
+    position: relative;
+    &__svg {
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        &--left {
+            top: 50%;
+            left: 0;
+            transform: rotate(90deg);
+            z-index: 1;
+            @include phones {
+                top: 25%;
+                left: -3%;
+            }
+        }
+        &--right {
+            top: 50%;
+            right: 0%;
+            transform: rotate(-90deg);
+            z-index: 1;
+            @include phones {
+                top: 25%;
+                right: -3%;
+            }
+        }
+    }
+    &__list {
+        .slick-list {
+            padding: rem(50px) 0 !important;
+        }
+    }
+    &__link {
+        display: inline-block;
+        cursor: pointer;
+    }
+    &__item {
+        display: flex !important;
+        position: relative;
+        @include tablets {
+            flex-direction: column;
+        }
+    }    
+    &__col {
+        flex: 1;
+        &--right {
+            padding: 9% 0 0 8%;
+            @include tablets {
+                padding: 5%;
+            }
+            @include phones {
+                padding: 0;
+            }
+        }
+        position: relative;
+    }
+    &__img {
+        text-align: center;
+        &>img {
+            @include phones {
+                width: 80%;
+            }
+        }
+    }
+    &__title {
+        color: $darkgrey;
+        font-size: rem(34px);
+        font-weight: 700;
+        line-height: rem(45px);
+        text-transform: uppercase;
+        @include tablets {
+            padding: 0 20%;
+            line-height: rem(36px);
+            text-align: center;
+        }
+        @include phones {
+            padding: 0;
+        }
+    }
+    &__text {
+        color: $grey;
+        font-size: rem(18px);
+        font-weight: 400;
+        line-height: rem(24px);
+        margin-right: 25%;
+        margin-bottom: 7%;
+        @include tablets {
+            padding: 0 10%;
+            text-align: center;
+            margin: 5% auto;
+        }
+        @include phones {
+            padding: 0;
+        }
+    }
+    &__features {
+        display: flex;
+        margin-bottom: 8%;
+        @include tablets {
+            justify-content: center;
+        }
+    }
+    &__price {
+        color: $lightgrey;
+        font-size: rem(18px);
+        font-weight: 400;
+    }
+    &__calorific {
+        color: $black;
+        margin-right: 16%;
+        &>span {
+            display: block;
+            font-weight: 700;
+        }
+    }
+    &__weight {
+        color: $black;
+        &>span {
+            display: block;
+            font-weight: 700;
+        }
+    }
+    &__order {
+        display: flex;
+        @include tablets {
+            justify-content: center;
+        }
+    }
+    &__price {
+        margin-right: 8%;  
+        color: $darkgrey;
+        font-size: rem(60px);
+        font-weight: 300;
+        line-height: rem(60px);
+        text-transform: uppercase;
+        span {
+            font-size: rem(36px);
+        }
+    }
+}
+
+.composition {
+    position: absolute;
+    left: 57.5%;
+    top: -5%;
+    z-index: 1;
+    @include tablets {
+        position: absolute;
+        left: 86%;
+    }
+    @include phones {
+        position: absolute;
+        left: 73%;
+        top: -6%
+    }
+    &__drop-table {
+        position: absolute;
+        top: 0;
+        left: 90px;
+        opacity: 0;
+        transition: opacity .3s;
+        background-color: rgba(255,255,255,0.8);
+        border-radius: 10px;
+        @include tablets {
+            left: -278%;
+        }
+    }
+    &__logo {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: rem(90px);
+        height: rem(90px);
+        background-color: $blue;
+        border-radius: 5px;
+        cursor: pointer;
+        &:hover {
+            ~ .composition__drop-table {
+                opacity: 1;
+            }
+            background-color:$darkblue;
+        }
+    }
+    &__svg {
+        fill: $white;
+    }        
+    &__title {
+        color: $white;
+        font-size: rem(14px);
+        font-weight: 700;
+        font-style: italic;
+        text-transform: uppercase;
+    }
+    &__list {
+        display: table;
+        padding: 5%;
+    }
+    &__item {
+        display: table-row;
+    }
+    &__icon, &__text, &__weight {
+        display: table-cell;
+        vertical-align: middle;
+        height: 50px;
+        padding: 10px;
+        white-space: nowrap;
+    }
+    &__text, &__weight {     
+        color: $lightgrey;
+        font-size: rem(16px);
+        font-weight: 500;
+    }    
+}    
+
+ .slick-slide img {
+    margin: 0 auto;
+}

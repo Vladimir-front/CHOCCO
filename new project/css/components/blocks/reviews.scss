@@ -1,0 +1,183 @@
+.section-reviews {
+    @include tablets {
+       padding: 8% 17%;
+    }
+    @include phones {
+        padding: 0;
+    }
+    position: relative;
+    &__container {
+        position: relative;
+        align-items: stretch;
+    }
+    &__title {
+        margin: 0 auto;
+    }
+    &__strawberry {
+        position: absolute;
+        top: 0;
+        right: -6%;
+        @include tablets {
+            top: -2%;
+            right: -25%;
+        }
+        @include phones {
+            width: 25%;
+            right: -5%;
+            top: 0;
+        }
+    }
+    &__berries_teams {
+        position: absolute;
+        left: 0;
+        bottom: -17%;
+        z-index: 10;
+        @include phones {
+            width: 20%;
+        }
+    }
+}    
+
+.review {    
+    &-wrapper {
+        position: relative;
+        margin: 3% 0;
+        background-color: $lightblue;
+        padding: 5% 20% 3% 6%;
+        background-image: url(../img/reviews/bg_berries.png);
+        background-repeat: no-repeat;
+        background-position: right top;
+        &::before {
+            content: "";
+            display: block;
+            position: absolute;
+            width: rem(90px);
+            height: rem(90px);
+            border-radius: 50%;
+            background-color: $white;
+            top: -18%;
+            left: 50%;
+            transform: translateX(-50%);
+            @include tablets {
+                top: -10%;
+            }
+            @include phones {
+                width: rem(60px);
+                height: rem(60px);
+            }
+        }
+        @include tablets {
+            padding: 5%;
+            margin: 3% 0;
+        }
+        @include phones {
+            padding: 10% 0 7%;
+        }
+    }
+    &__item {
+        display: flex !important;
+        @include tablets {
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+    &__photo {
+        width: rem(254px);
+        margin-right: 2.5%;
+        @include tablets {
+           margin: 8% 0; 
+           width: auto;
+        }
+        @include phones {
+            margin: 0;
+        }    
+    }
+    &__img {
+        object-fit: cover;
+        object-position: center;
+        @include tablets {
+            width: rem(210px);
+        }
+        @include phones {
+            width: rem(120px);
+        }
+    }
+    &__title {     
+        color: $lightgrey;
+        font-size: rem(30px);
+        font-weight: 500;
+        margin-bottom: 5%;
+        @include tablets {
+            text-align: center;
+        }
+        @include phones {
+            font-size: rem(26px);
+            line-height: rem(26px);
+        }
+    }
+    &__text {
+        margin-bottom: 5%;
+        color: $grey;
+        font-size: rem(18px);
+        font-weight: 400;
+        line-height: rem(22px);
+        @include tablets {
+            text-align: center;
+        }
+        @include phones {
+            margin-bottom: 2%;
+        }
+    }
+    &__name {
+        @extend .review__text;
+        font-weight: 500;
+    }
+    &__list-bottom {
+        margin: 0 auto;
+    }
+    &__item-bottom {
+        cursor: pointer;
+        margin: 0 5px;
+    }
+    &__photo-bottom {
+        display: block;
+        width: rem(75px);
+        height: rem(75px);
+        border-radius: 50%;
+        overflow: hidden;
+        border: 5px solid transparent;
+        outline: none;
+        &:hover {
+            border: 5px solid $green;  
+        }
+        @include tablets {
+            width: rem(84px);
+            height: rem(84px);
+        }
+        &--active {
+            border: 5px solid $green;   
+        }
+    }
+    &__img-bottom {
+        max-width: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+}
+
+.review__list-bottom .slick-track {
+    transform: none !important;
+    width: auto !important;
+}
+
+.review__list-bottom .slick-list {
+     padding: 4px !important;
+}
+
+.review__item-bottom .slick-slide {
+    width: auto !important;
+}
+
+
+   
+   

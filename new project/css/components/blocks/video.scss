@@ -1,0 +1,54 @@
+.section-video {
+    background-color: $lightblue;
+    position: relative;
+    @include tablets {
+        padding: 10% 0 12%;
+    }
+    &__container {
+        flex-direction: column;
+        position: relative;
+    }
+    &__wrapper {
+        margin-top: 4%;
+        @include tablets {
+            text-align: center;
+        }
+    }
+    &__blackberry {
+        position: absolute;
+        right: 0;
+        bottom: -10%;
+        @include tablets {
+            width: 15%;
+            bottom: -15%;
+        }
+        @include phones {
+            bottom: -5%;
+        }
+    }
+    &__leaf {
+        position: absolute;
+        top: 8%;
+        right: 0;
+        @include tablets {
+            width: 10%;
+        }
+    }
+    &__leaf-two {
+        position: absolute;
+        left: 0;
+        bottom: -14%;
+        @include tablets {
+            width: 7%;
+        }    
+    }
+}
+
+.video {
+    @include tablets {
+        width: 85%;
+        height: 85%;
+    }        
+}
+
+
